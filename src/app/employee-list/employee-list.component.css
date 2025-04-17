@@ -1,0 +1,114 @@
+.container {
+    margin-top: 20px;
+}
+
+.header {
+    background-image: url('https://via.placeholder.com/1500x300');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #673AB7;
+    /* Purple color for the header */
+    color: white;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #FFC107;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #03A9F4;
+}
+
+tbody tr:hover {
+    background-color: #4CAF50;
+}
+
+tbody td {
+    padding: 12px;
+    font-size: 14px;
+    color: #333;
+}
+
+tbody td:nth-child(1) {
+    font-weight: bold;
+}
+
+tbody td:nth-child(6) {
+    color: #E91E63;
+    text-decoration: underline;
+}
+
+button {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #E64A19;
+}
+
+@media (max-width: 600px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+    thead tr {
+        display: none;
+    }
+    tbody tr {
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+        display: block;
+    }
+    tbody td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ccc;
+        position: relative;
+        padding-left: 50%;
+    }
+    tbody td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 13px;
+        color: #E91E63;
+    }
+}
